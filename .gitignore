@@ -1,4 +1,5 @@
-
+venv/
+.scannerwork
 logs
 .DS_Store
 node_modules
