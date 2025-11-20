@@ -1,0 +1,33 @@
+{
+  "name": "mattermost-cucumber-tests",
+  "version": "1.0.0",
+  "description": "Pruebas E2E con Cucumber para Mattermost",
+  "keywords": [
+    "cucumber",
+    "bdd",
+    "testing",
+    "mattermost",
+    "e2e"
+  ],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --profile smoke",
+    "test:regression": "cucumber-js --profile regression",
+    "test:critical": "cucumber-js --profile critical",
+    "test:watch": "nodemon --watch features --watch step_definitions -e feature,js --exec 'cucumber-js'",
+    "test:report": "npm run test && open cucumber-report.html"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.5.1",
+    "chai": "^4.3.10",
+    "nodemon": "^3.0.1",
+    "puppeteer": "^21.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
