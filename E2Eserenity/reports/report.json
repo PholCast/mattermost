@@ -1,0 +1,394 @@
+[
+  {
+    "description": "  Como usuario autenticado\n  Quiero crear nuevos canales\n  Para organizar conversaciones sobre temas específicos",
+    "elements": [
+      {
+        "description": "",
+        "id": "creación-de-canales-en-mattermost;crear-un-canal-público-exitosamente",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Crear un canal público exitosamente",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1093199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 63200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que estoy autenticado en Mattermost",
+            "match": {
+              "location": "steps\\createChannel.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105328700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "tengo datos válidos para un nuevo canal público",
+            "match": {
+              "location": "steps\\createChannel.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7070499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "intento crear el canal",
+            "match": {
+              "location": "steps\\createChannel.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39580699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "el canal debería ser creado exitosamente",
+            "match": {
+              "location": "steps\\createChannel.steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "debería poder ver el canal en la lista de canales",
+            "match": {
+              "location": "steps\\createChannel.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 130200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "creación-de-canales-en-mattermost",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Creación de Canales en Mattermost",
+    "tags": [],
+    "uri": "features\\createChannel.feature"
+  },
+  {
+    "description": "  Como usuario\n  Quiero iniciar sesión\n  Para acceder a funciones protegidas",
+    "elements": [
+      {
+        "description": "",
+        "id": "autenticación;inicio-de-sesión-con-credenciales-válidas",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Inicio de sesión con credenciales válidas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 216800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 91400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que el usuario tiene credenciales válidas",
+            "match": {
+              "location": "steps\\login.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "el usuario intenta iniciar sesión",
+            "match": {
+              "location": "steps\\login.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78585199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "el usuario debería ver un mensaje de éxito",
+            "match": {
+              "location": "steps\\login.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 88299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "autenticación",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Autenticación",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "  Como usuario autenticado\n  Quiero enviar mensajes a un canal\n  Para comunicarme con mi equipo",
+    "elements": [
+      {
+        "description": "",
+        "id": "envío-de-mensajes-en-mattermost;enviar-un-mensaje-de-texto-a-un-canal",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Enviar un mensaje de texto a un canal",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 72200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que estoy autenticado en Mattermost",
+            "match": {
+              "location": "steps\\createChannel.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79058800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "que existe un canal donde puedo publicar",
+            "match": {
+              "location": "steps\\sendMessage.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42583500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "envío un mensaje de texto a ese canal",
+            "match": {
+              "location": "steps\\sendMessage.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21690399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "el mensaje debería aparecer en el historial del canal",
+            "match": {
+              "location": "steps\\sendMessage.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 155600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "envío-de-mensajes-en-mattermost",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Envío de Mensajes en Mattermost",
+    "tags": [],
+    "uri": "features\\sendMessage.feature"
+  },
+  {
+    "description": "  Como nuevo usuario\n  Quiero registrarme en la plataforma\n  Para poder unirme a equipos y canales",
+    "elements": [
+      {
+        "description": "",
+        "id": "registro-de-usuario-en-mattermost;registro-exitoso-con-credenciales-nuevas",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Registro exitoso con credenciales nuevas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que tengo datos de usuario nuevos y válidos",
+            "match": {
+              "location": "steps\\signup.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "intento registrarme en Mattermost",
+            "match": {
+              "location": "steps\\signup.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149287899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "debería recibir una confirmación de registro exitoso",
+            "match": {
+              "location": "steps\\signup.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "el usuario debería existir en el sistema",
+            "match": {
+              "location": "steps\\signup.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 91600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "registro-de-usuario-en-mattermost",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registro de Usuario en Mattermost",
+    "tags": [],
+    "uri": "features\\signup.feature"
+  }
+]
